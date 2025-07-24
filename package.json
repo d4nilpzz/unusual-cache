@@ -1,0 +1,20 @@
+{
+  "name": "unusual-cache",
+  "version": "1.0.0",
+  "description": "Simple pluggable cache middleware for Express with TTL support",
+  "main": "./index.js",
+  "types": "./index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./index.js",
+      "types": "./index.d.ts"
+    }
+  },
+  "keywords": ["express", "cache", "middleware", "ttl"],
+  "author": "d4nilpzz",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  }
+}
