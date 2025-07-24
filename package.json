@@ -1,14 +1,14 @@
 {
   "name": "unusual-cache",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "Simple pluggable cache middleware for Express with TTL support",
-  "main": "./index.js",
-  "types": "./index.d.ts",
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
   "type": "module",
   "exports": {
     ".": {
-      "import": "./index.js",
-      "types": "./index.d.ts"
+      "import": "./src/index.js",
+      "types": "./src/index.d.ts"
     }
   },
   "keywords": [
