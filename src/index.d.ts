@@ -13,7 +13,7 @@ export interface CacheStore {
 }
 
 export interface CacheOptions {
-  ttl?: number;
+  ttl?: number | ((req: Request) => number);
   keyGenerator?: (req: Request) => string;
   store?: CacheStore;
 }

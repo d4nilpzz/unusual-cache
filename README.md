@@ -38,13 +38,29 @@ yarn add unusual-cache
 
 
 ```js
+import express from 'express';
 import cache from 'unusual-cache';
 
-...
+const app = express();
 
-app.get('/data', cache({ ttl: 60 }), async (req, res) => {
-  const data = await fetchExpensiveData();
+const slowFunction = async () => {
+  console.log('⏳ slowFunction called...');
+  await new Promise((resolve) => setTimeout(resolve, 3000));
+  return { message: '✅ Response from slowFunction' };
+};
+
+app.get('/api/data', cache({
+  ttl: (req) => req.query.noCache ? 0 : 30,
+  keyGenerator: (req) => req.originalUrl.split('?')[0],
+}), async (req, res) => {
+  const data = await slowFunction();
   res.json(data);
 });
+
+
+app.listen(3000, () => {
+  console.log('🚀 Server running on http://localhost:3000');
+});
+
 ```
 
