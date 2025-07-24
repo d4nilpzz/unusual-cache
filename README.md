@@ -1,6 +1,6 @@
 <div align="center">
   <h1>Unusual Cache</h1>
-  <a href="https://www.npmjs.com/package/unusual-cache"><img src="https://img.shields.io/npm/v/unusual-cache.svg?style=flat" /></a>
+  <a href="https://www.npmjs.com/package/unusual-cache"><img src="https://img.shields.io/npm/v/unusual-cache" /></a>
   <a href="https://github.com/prisma/prisma/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue" /></a>
   <a href="https://discord.d4nilpzz.dev"><img alt="Discord" src="https://img.shields.io/discord/1373385570965000292?label=Discord"></a>
   <br />
